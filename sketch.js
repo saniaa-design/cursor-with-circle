@@ -1,22 +1,14 @@
-let x,y,r,g,b; 
-
+let a;
 function setup() {
-  createCanvas(windowWidth,windowHeight);
+  createCanvas(400, 400);
   background(0);
 }
 
 function draw() {
-  
-  //r= random(225);
-  r=0
-  g= random(225);
-  //g= 0
-  b= random(225);
- //b=0
-  x= random(width);
-  y= random(height);
+  a= random(25)
   
   noStroke();
-  fill(r,g,b,100);
-  circle(x,y,24);
+  fill(223,100,10);
+  circle(mouseX, mouseY, a)
+ 
 }
